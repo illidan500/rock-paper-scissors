@@ -3,9 +3,32 @@
     <head>
         <script type="text/javascript" src="new.js" defer></script>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <header><h1>What is your choice going to be???</h1></header>
+        <header><h1>What is your choice going to be?</h1></header>
+        
+        <audio id="roundWonSound">
+            <source src="sounds/win.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="roundLostSound">
+            <source src="sounds/lose.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="roundDrawSound">
+            <source src="sounds/draw.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="gameLostSound">
+            <source src="sounds/mixkit-arcade-game-opener-222.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="gameWonSound">
+            <source src="sounds/mixkit-arcade-game-complete-or-approved-mission-205.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
         <div id="rock" class="symbol"></div>
         <div id="paper" class="symbol"></div>
         <div id="scissors" class="symbol"></div>
