@@ -34,15 +34,20 @@ function playRound (playerSelection, computerSelection) {
   let pla = 0;
   document.getElementById("playerscore").innerHTML = pla;
   document.getElementById("computerscore").innerHTML = comp;
+
   function game () {
+    document.getElementById("computer").classList.remove("cSelected");
+    document.getElementById("player").classList.remove("pSelected");
         const computerSelection = computerPlay();
         let round = playRound(playerSelection, computerSelection);
             if (round == "Computer won") {
                 comp++;
                 document.getElementById("computerscore").innerHTML = comp;
+                document.getElementById("computer").classList.add("cSelected");
             } else if (round == "Player won") {
                 pla++;
                 document.getElementById("playerscore").innerHTML = pla;
+                document.getElementById("player").classList.add("pSelected");
             };    
         console.log(round);
         if (comp === 5) {
@@ -75,21 +80,18 @@ function playRound (playerSelection, computerSelection) {
         cleaner();
         playerSelection = "rock";
         document.getElementById("rock").classList.add("pSelected");
-        document.getElementById("rock").innerHTML = "YOU";
         console.log(game());
     });
     document.getElementById("paper").addEventListener("click", function () {
         cleaner();
         playerSelection = "paper";
         document.getElementById("paper").classList.add("pSelected");
-        document.getElementById("paper").innerHTML = "YOU";
         console.log(game());
     });
     document.getElementById("scissors").addEventListener("click", function () {
         cleaner();
         playerSelection = "scissors";
         document.getElementById("scissors").classList.add("pSelected");
-        document.getElementById("scissors").innerHTML = "YOU";
         console.log(game());
     });
     document.getElementById("rock").addEventListener("mouseover", function () { 
@@ -121,6 +123,8 @@ function playRound (playerSelection, computerSelection) {
         document.getElementById("rock").innerHTML = "";
         document.getElementById("paper").innerHTML = "";
         document.getElementById("scissors").innerHTML = "";
+        document.getElementById("computer").classList.remove("cSelected");
+        document.getElementById("player").classList.remove("pSelected");
     };
  
   
