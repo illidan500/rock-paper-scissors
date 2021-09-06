@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="new.js"></script>
+        <script type="text/javascript" src="new.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    <h1>THE GAME</h1>
+        <header><h1>What is your choice going to be?</h1></header>
+        
+        <audio id="roundWonSound">
+            <source src="sounds/win.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="roundLostSound">
+            <source src="sounds/lose.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="roundDrawSound">
+            <source src="sounds/draw.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="gameLostSound">
+            <source src="sounds/mixkit-arcade-game-opener-222.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="gameWonSound">
+            <source src="sounds/mixkit-arcade-game-complete-or-approved-mission-205.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div id="rock" class="symbol"></div>
+        <div id="paper" class="symbol"></div>
+        <div id="scissors" class="symbol"></div>
+        <div id="title"><h1 style="padding-top: 40px;">SCOREBOARD</h1></div>
+        <div id="pla" class="boards"><h1 id="playertitle">YOU</h1></div>
+        <div id="comp" class="boards"><h1 id="computertitle">COMP</h1></div>
+        <div id="player" class="boards"><h1 id="playerscore"></h1></div>
+        <div id="computer" class="boards"><h1 id="computerscore"></h1></div>
     </body>
 </html>
