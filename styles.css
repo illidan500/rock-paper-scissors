@@ -9,7 +9,7 @@ body {
     color: greenyellow;
 }
 header {
-    grid-column: 7 / 11;
+    grid-column: 1 / 5;
     grid-row: 1 / 2;
     text-align: center;
     font-size: 17px;
@@ -20,29 +20,21 @@ header {
 }
 #rock {
     background: url("images/122-1220780_pebble-clipart-border-rock-icon-clipart-black-and.png");
-    grid-column: 4 / 6;
-    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
     text-align: center;
 }
 #paper {
     background: url("images/dcd8fc2afdb658271f04c72389ef117d.jpg");
-    grid-column: 8 / 10;
-    grid-row: 2 / 4;
+    grid-column: 4 / 6;
+    grid-row: 4 / 6;
     text-align: center;
 }
 #scissors {
     background: url("images/648c9a851bd8b060d89b1da4f6dc837f.jpg");
-    grid-column: 12 / 14;
-    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+    grid-row: 6 / 8;
     text-align: center;
-}
-#title {
-    grid-column: 8 / 10;
-    grid-row: 4 / 5;
-    max-width: 240px;
-    max-height: 120px;
-    text-align: center;
-    font-size: 17px;
 }
 .boards {
     text-align: center;
@@ -52,20 +44,20 @@ header {
     font-size: 19px;
 }
 #player {
-    grid-column: 8 / 9;
-    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
 }
 #computer {
-    grid-column: 9 / 10;
-    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
 }
 #pla {
-    grid-column: 8 / 9;
-    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
  }
 #comp {
-    grid-column: 9 / 10;
-    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
 }
 .mouseover {
     transform: scale(1.2, 1.2);
